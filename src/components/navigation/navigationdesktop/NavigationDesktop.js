@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import RoutingPath from "../../../routes/RoutingPath";
 import "./NavigationDesktop.css";
 
 export const NavigationDesktop = () => {
@@ -8,16 +9,24 @@ export const NavigationDesktop = () => {
       <span className="nav-desktop-logo">Logo</span>
       <ul className="nav-desktop-list">
         <li>
-          <Link to="/">Home</Link>
+          <Link to={RoutingPath.homeView}>Home</Link>
         </li>
         <li>
-          <Link to="/signin">Sign in</Link>
+          <Link to={RoutingPath.signInView}>Sign in</Link>
         </li>
         <li>
-          <button onClick={() => navigate("/")}>Home</button>
+          <Link to={RoutingPath.storeView}>Store</Link>
         </li>
         <li>
-          <button onClick={() => navigate("/signin")}>Sign in</button>
+          <button onClick={() => navigate(RoutingPath.homeView)}>Home</button>
+        </li>
+        <li>
+          <button onClick={() => navigate(RoutingPath.signInView)}>
+            Sign in
+          </button>
+        </li>
+        <li>
+          <button onClick={() => navigate(RoutingPath.storeView)}>Store</button>
         </li>
       </ul>
     </nav>
