@@ -1,0 +1,19 @@
+:root {
+    --clr-primary: #4fc1fa;
+    --clr-primary-dark: #4fc1fa;
+    --clr-secondary: white;
+    --clr-secondary-dark: #333;
+    --clr-accent: red;
+    --clr-accent-dark: #971010;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-secondary);
+    color: var(--clr-secondary-dark);
+}
+
+img {
+    max-width: 100%;
+}

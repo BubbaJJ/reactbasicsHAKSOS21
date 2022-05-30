@@ -4,16 +4,16 @@ export const HomeView = () => {
   const [count, setCount] = useState(1); // count = lagrar värdet. setCount = uppdaterer det lagrade värdet.
 
   useEffect(() => {
-    alert("Welcome!"); // När sidan laddas första gången.
+    console.log("Welcome!"); // När sidan laddas första gången.
     return () => {
-      alert("Goodbye!"); // När vi lämnar sidan.
+      console.log("Goodbye!"); // När vi lämnar sidan.
     };
   }, []); // Säkerställer att vi bara kör funktionen en gång.
 
   useEffect(() => {
-    alert("Welcome!"); // När sidan laddas första gången.
+    console.log("Welcome!"); // När sidan laddas första gången.
     return () => {
-      alert("Goodbye!"); // När vi lämnar sidan.
+      console.log("Goodbye!"); // När vi lämnar sidan.
     };
   }, [count]); // Triggas när count uppdateras.
 
