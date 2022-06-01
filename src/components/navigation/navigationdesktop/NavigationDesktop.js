@@ -43,6 +43,14 @@ export const NavigationDesktop = () => {
         <li>
           <button onClick={() => navigate(RoutingPath.storeView)}>Store</button>
         </li>
+        <li>
+          <button onClick={() => navigate(RoutingPath.movieView)}>Movie</button>
+        </li>
+        <li>
+          <button onClick={() => navigate(RoutingPath.findMovieView)}>
+            Find Movie
+          </button>
+        </li>
       </ul>
       {renderLogin()}
     </nav>
